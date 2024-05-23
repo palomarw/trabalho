@@ -1,0 +1,69 @@
+/* Perguntas Frequentes */
+:root {
+    --cor_principal: rgb(84, 84, 84);
+    --cor_hover: rgb(136, 136, 136);
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+section h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.perguntas {
+    color: white;
+    background-color: var(--cor_principal);
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 30px;
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+}
+
+.perguntas:hover {
+    background-color: var(--cor_hover);
+    color: black;
+    font-weight: bold;
+}
+
+.perguntas p {
+    display: none;
+    margin-top: 1rem;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    border-top: 2px solid black;
+    padding-top: 1rem;
+}
+
+.perguntas:hover p {
+    display: block;
+}
+
+.perguntas p > a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+}
+
+.perguntas p > a:hover {
+    background-color: black;
+    color: white;
+}
+
+.perguntas p > a:hover::after {
+    content: '🔗';
+}
